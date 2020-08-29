@@ -53,6 +53,7 @@ function getTech(callback) {
                     currentProject = row.project;
                 }
             }
+            console.log(techList);
             callback(techList);
         }
     });
@@ -68,7 +69,6 @@ function packageProjects(callback) {
             for (row of details) {
                 let project = new projectModel(row.name, row.description, row.github, row.url, null);
                 projects.push(project);
-                console.log(project);
             }
         }
 
@@ -77,6 +77,7 @@ function packageProjects(callback) {
                 console.log("No tech lists");
                 callback(null);
             } else {
+                console.log(tech);
                 for (let i = 0; i < tech.length; i++) {
                     projects[i].setTech(tech[i]); // should be same number of tech lists and projects
                 }
