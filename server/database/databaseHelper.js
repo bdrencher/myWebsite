@@ -30,7 +30,7 @@ function getTechData(callback) {
             console.log(err);
             callback("There was an error getting the project tech details", null);
         } else {
-            callback(null, res);
+            callback(null, res.rows);
         }
     });
 }
