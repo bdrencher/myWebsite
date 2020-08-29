@@ -6,11 +6,11 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
-app.get("/projects", (res) => {
+app.get("/projects", (req, res) => {
     projectController.getProjects(res)
 });
 
-app.get("/", (res) => {
+app.get("/", (req, res) => {
     res.send("<h1>Hello</h1>");
 });
 
