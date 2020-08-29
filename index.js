@@ -10,6 +10,8 @@ app.get("/projects", (res) => {
     projectController.getProjects(res)
 });
 
-
+app.get("/", (res) => {
+    res.send("<h1>Hello</h1>");
+});
 
 app.listen(process.env.PORT);
