@@ -1,18 +1,19 @@
 module.exports = {
-    getProjects: getProjects
+    getProjects: getProjects,
 }
 
 import { projectModel } from "../models/projectModel";
 
 const database = require('../database/databaseHelper');
 
-function getProjects(callback) {
+function getProjects(res) {
     packageProjects((data) => {
         if (data == null) {
             console.log("Could not get projects");
+            res.status(400).json({success: false});
         }
         else {
-            callback(data);
+            res.status(200).json({projects: data});
         }
     });
 }
