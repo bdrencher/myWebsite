@@ -9,3 +9,5 @@ app.use(express.static(path.join(__dirname, 'client', 'build')));
 app.get("/projects", (res) => {
     projectController.getProjects(res)
 });
+
+app.listen(9000);
