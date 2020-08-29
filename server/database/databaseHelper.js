@@ -23,7 +23,7 @@ function getDetails(callback) {
 }
 
 function getTechData(callback) {
-    const query = 'SELECT p.name, t.name FROM projects p INNER JOIN project_tech_map ptm ON p.project_id = ptm.project_id INNER JOIN technologies t ON ptm.tech_id = t.tech_id;';
+    const query = 'SELECT p.name project, t.name tech FROM projects p INNER JOIN project_tech_map ptm ON p.project_id = ptm.project_id INNER JOIN technologies t ON ptm.tech_id = t.tech_id;';
 
     pool.query(query, null, (err, res) => {
         if (err || res == null) {

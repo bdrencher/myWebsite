@@ -27,6 +27,6 @@ SELECT p.name, p.description, l.github, l.url FROM projects p
 INNER JOIN links l ON l.project_id = p.project_id;
 
 // get project tech data
-SELECT p.name, t.name FROM projects p
+SELECT p.name project, t.name tech FROM projects p
 INNER JOIN project_tech_map ptm ON p.project_id = ptm.project_id
 INNER JOIN technologies t ON ptm.tech_id = t.tech_id;
