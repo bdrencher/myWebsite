@@ -13,7 +13,6 @@ function getProjects(res) {
             res.status(400).json({success: false});
         }
         else {
-            console.log(data);
             res.status(200).json({projects: data});
         }
     });
