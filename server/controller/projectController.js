@@ -42,18 +42,18 @@ function getTech(callback) {
             callback(null);
         } else {
             let currentProject = result[0].project;
-            let tempList = [];
+            let temporaryList = [];
             for (row of result) {
+                console.log(currentProject);
                 if (row.project == currentProject) {
                     tempList.push(row.tech);
                 } else {
                     techList.push(tempList);
-                    tempList = [];
-                    tempList.push(row.tech);
+                    temporaryList = [];
+                    temporaryList.push(row.tech);
                     currentProject = row.project;
                 }
             }
-            console.log(techList);
             callback(techList);
         }
     });
@@ -77,7 +77,6 @@ function packageProjects(callback) {
                 console.log("No tech lists");
                 callback(null);
             } else {
-                console.log(tech);
                 for (let i = 0; i < tech.length; i++) {
                     projects[i].setTech(tech[i]); // should be same number of tech lists and projects
                 }
