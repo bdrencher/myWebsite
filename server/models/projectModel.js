@@ -1,4 +1,5 @@
-export class projectModel {
+module.exports = 
+    class projectModel {
     constructor(iName, iDescription, iGithubLink, iProjectLink, iTechnologies) {
         this.name = iName;
         this.description = iDescription;

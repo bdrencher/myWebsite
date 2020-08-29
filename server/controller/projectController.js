@@ -2,7 +2,7 @@ module.exports = {
     getProjects: getProjects,
 }
 
-import { projectModel } from "../models/projectModel";
+const projectModel = require("../models/projectModel");
 
 const database = require('../database/databaseHelper');
 
