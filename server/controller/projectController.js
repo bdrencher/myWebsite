@@ -65,7 +65,7 @@ function packageProjects(callback) {
             console.log("No details");
             callback(null);
         } else {
-            for (row in details) {
+            for (row of details) {
                 let project = new projectModel(row.name, row.description, row.github, row.url, null);
                 projects.push(project);
                 console.log(project);
