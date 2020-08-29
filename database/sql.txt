@@ -1,0 +1,32 @@
+// Projects
+CREATE TABLE projects (project_id SERIAL PRIMARY KEY,
+ name VARCHAR(50) NOT NULL,
+  description VARCHAR(300) NOT NULL,
+   github_id SERIAL, url_id SERIAL,
+    technology_id SERIAL);
+
+INSERT INTO projects (name, description) VALUES ([name], [description]);
+
+// Links
+CREATE TABLE links (project_id INTEGER REFERENCES projects(project_id), github VARCHAR(300), url VARCHAR(300));
+
+INSERT INTO links (project_id, github, url) VALUES ((SELECT project_id FROM projects WHERE name = [project_name]), [github], [url]);
+
+// technologies
+CREATE TABLE technologies (tech_id SERIAL PRIMARY KEY, name VARCHAR(50) NOT NULL);
+
+INSERT INTO technologies (name) VALUES ([tech_name]);
+
+// project - tech correlation
+CREATE TABLE project_tech_map (project_id INTEGER REFERENCES projects(project_id), tech_id INTEGER REFERENCES technologies(tech_id));
+
+INSERT INTO project_tech_map VALUES ((SELECT project_id FROM projects WHERE name = [project_name]), (SELECT tech_id FROM technologies WHERE name = [tech_name]));
+
+// get project description data
+SELECT p.name, p.description, l.github, l.url FROM projects p
+INNER JOIN links l ON l.project_id = p.project_id;
+
+// get project tech data
+SELECT p.name, t.name FROM projects p
+INNER JOIN project_tech_map ptm ON p.project_id = ptm.project_id
+INNER JOIN technologies t ON ptm.tech_id = t.tech_id;
