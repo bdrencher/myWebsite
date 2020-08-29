@@ -18,4 +18,8 @@ export class projectModel {
 
         return JSON.stringify(projectOBJ);
     }
+
+    setTech(iTechnologies) {
+        this.technologies = iTechnologies;
+    }
 }
