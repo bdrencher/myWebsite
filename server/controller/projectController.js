@@ -46,9 +46,9 @@ function getTech(callback) {
             for (row of result) {
                 console.log(currentProject);
                 if (row.project == currentProject) {
-                    tempList.push(row.tech);
+                    temporaryList.push(row.tech);
                 } else {
-                    techList.push(tempList);
+                    techList.push(temporaryList);
                     temporaryList = [];
                     temporaryList.push(row.tech);
                     currentProject = row.project;
