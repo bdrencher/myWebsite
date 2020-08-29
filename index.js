@@ -10,4 +10,4 @@ app.get("/projects", (res) => {
     projectController.getProjects(res)
 });
 
-app.listen(9000);
+app.listen(process.env.PORT);
