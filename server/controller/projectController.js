@@ -44,7 +44,6 @@ function getTech(callback) {
             let currentProject = result[0].project;
             let temporaryList = [];
             for (row of result) {
-                console.log(currentProject);
                 if (row.project == currentProject) {
                     temporaryList.push(row.tech);
                 } else {
@@ -54,6 +53,7 @@ function getTech(callback) {
                     currentProject = row.project;
                 }
             }
+            techList.push(temporaryList); // get the final list into the array
             callback(techList);
         }
     });
