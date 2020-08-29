@@ -11,7 +11,7 @@ app.get("/projects", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-    res.send("<h1>Hello</h1>");
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
 app.listen(process.env.PORT);
