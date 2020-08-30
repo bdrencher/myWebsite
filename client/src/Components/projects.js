@@ -1,29 +1,26 @@
 import React from 'react';
 
-class Project extends React.Component {
-    constructor(iName, iDescription, iGithub, iURL, iTechnologies) {
-        super();
-        this.name = iName;
-        this.description = iDescription;
-        this.github = iGithub;
-        this.url = iURL;
-        this.tech = iTechnologies;
-        this.techList = this.tech.map((tech) => <li>{tech}</li>);
-    }
-
-    render() {
+const Project = props => {
+    const name = props.name;
+    const description = props.description;
+    const github = props.github;
+    const url = props.url;
+    const tech = props.tech.map((techName) => {
         return (
-            <div className="project">
-                <h3>{this.name}</h3>
-                <p>{this.description}</p>
-                <a href={this.github}>GitHub</a>
-                <a href={this.url}>Project demonstration</a>
-                <p>This project uses the following technologies:</p>
-                <ul>{this.techList}</ul>
-                IT WORKED!!!!
-            </div>
-        )
-    }
+        <li>{techName}</li>
+        );
+    });
+    return (
+        <div className="project">
+            <h3>{name}</h3>
+            <p>{description}</p>
+            <a href={github}>GitHub</a>
+            <a href={url}>Project demonstration</a>
+            <p>This project uses the following technologies:</p>
+            <ul>{tech}</ul>
+            IT WORKED!!!!
+        </div>
+    )
 }
 
 export default Project;
