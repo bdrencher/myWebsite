@@ -1,3 +1,5 @@
+import React from 'react';
+
 class Project extends React.Component {
     constructor(iName, iDescription, iGithub, iURL, iTechnologies) {
         super();
