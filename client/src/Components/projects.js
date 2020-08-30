@@ -11,7 +11,7 @@ class Project extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="project">
                 <h3>{this.name}</h3>
                 <p>{this.description}</p>
                 <a href={this.github}>GitHub</a>
