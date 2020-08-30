@@ -18,6 +18,7 @@ class Project extends React.Component {
                 <a href={this.url}>Project demonstration</a>
                 <p>This project uses the following technologies:</p>
                 <ul>{this.techList}</ul>
+                IT WORKED!!!!
             </div>
         )
     }
