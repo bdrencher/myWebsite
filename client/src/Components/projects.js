@@ -42,8 +42,8 @@ class Project extends React.Component {
                         <div className="project">
                             <h3>{project.name}</h3>
                             <p>{project.description}</p>
-                            <a href={project.github}>Github</a>
-                            <a href={project.url}>Project demonstration</a>
+                            <a href={project.githubLink}>Github</a>
+                            <a href={project.projectLink}>Project demonstration</a>
                             {/* add tech at some point */}
                         </div>  
                     ))}
