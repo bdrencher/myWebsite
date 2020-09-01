@@ -16,7 +16,7 @@ class Project extends React.Component {
                 this.setState({
                     projects: result.projects
                 });
-                console.log(projects);
+                console.log(result.projects);
             },
             (error) => {
                 console.log("An error occured getting project data");
