@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
 
 class Project extends React.Component {
     constructor(props) {
@@ -37,9 +38,9 @@ class Project extends React.Component {
             );
         } else {
             return (
-                <div className="projects">
+                <Container className="projects">
                     {projects.map((project) => (
-                        <div className="project">
+                        <Container className="project">
                             <h3>{project.name}</h3>
                             <p>{project.description}</p>
                             <a href={project.githubLink}>Github</a>
@@ -51,9 +52,9 @@ class Project extends React.Component {
                                     ))}
                                 </ul>
                             </div>
-                        </div>  
+                        </Container>  
                     ))}
-                </div>
+                </Container>
             );
         }
     }
