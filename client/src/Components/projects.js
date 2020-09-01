@@ -44,7 +44,11 @@ class Project extends React.Component {
                             <p>{project.description}</p>
                             <a href={project.githubLink}>Github</a>
                             <a href={project.projectLink}>Project demonstration</a>
-                            {/* add tech at some point */}
+                            <ul>
+                                {projects.technologies.map((tech) => (
+                                    <li>{tech}</li>
+                                ))}
+                            </ul>
                         </div>  
                     ))}
                 </div>
