@@ -44,11 +44,13 @@ class Project extends React.Component {
                             <p>{project.description}</p>
                             <a href={project.githubLink}>Github</a>
                             <a href={project.projectLink}>Project demonstration</a>
-                            <ul>
-                                {project.technologies.map((tech) => (
-                                    <li>{tech}</li>
-                                ))}
-                            </ul>
+                            <div className="projectTechs">
+                                <ul>
+                                    {project.technologies.map((tech) => (
+                                        <li>{tech}</li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>  
                     ))}
                 </div>
