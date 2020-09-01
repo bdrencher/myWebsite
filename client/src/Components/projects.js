@@ -45,7 +45,7 @@ class Project extends React.Component {
                             <a href={project.githubLink}>Github</a>
                             <a href={project.projectLink}>Project demonstration</a>
                             <ul>
-                                {projects.technologies.map((tech) => (
+                                {project.technologies.map((tech) => (
                                     <li>{tech}</li>
                                 ))}
                             </ul>
