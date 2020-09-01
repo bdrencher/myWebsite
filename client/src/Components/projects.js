@@ -37,8 +37,8 @@ class Project extends React.Component {
         } else {
             return (
                 <div className="projects">
-                    {projects.map((project, index) => (
-                        <div className={index}>
+                    {projects.map((project) => (
+                        <div className="project">
                             <h3>{project.name}</h3>
                             <p>{project.description}</p>
                             <a href={project.github}>Github</a>
