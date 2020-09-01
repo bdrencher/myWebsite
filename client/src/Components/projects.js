@@ -1,4 +1,5 @@
 import React from 'react';
+import './projects.css';
 import Container from 'react-bootstrap/Container';
 
 class Project extends React.Component {
