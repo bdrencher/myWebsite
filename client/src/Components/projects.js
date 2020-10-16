@@ -40,7 +40,7 @@ class Project extends React.Component {
             );
         } else {
             return (
-                <Grid className="projects" justify="flex-start" direction="column" alignItems="center" spacing={5}>
+                <Grid container className="projects" justify="flex-start" direction="column" alignItems="center" spacing={5}>
                     {projects.map((project) => (
                         <Container className="project">
                             <Card className="card">
