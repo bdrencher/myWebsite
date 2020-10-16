@@ -2,6 +2,7 @@ import React from 'react';
 import './projects.css';
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
+import Grid from '@material-ui/core/Grid';
 
 class Project extends React.Component {
     constructor(props) {
@@ -39,7 +40,7 @@ class Project extends React.Component {
             );
         } else {
             return (
-                <Container className="projects">
+                <Grid className="projects" justify="flex-start" direction="column" alignItems="center">
                     {projects.map((project) => (
                         <Container className="project">
                             <Card>
@@ -57,7 +58,7 @@ class Project extends React.Component {
                             </Card>
                         </Container>  
                     ))}
-                </Container>
+                </Grid>
             );
         }
     }
