@@ -46,9 +46,12 @@ class Project extends React.Component {
                                 <div className="cardContent">
                                     <h3>{project.name}</h3>
                                     <p>{project.description}</p>
-                                    <a href={project.githubLink}>Github</a>
-                                    <a href={project.projectLink}>Project demonstration</a>
+                                    <div className="projectLinks">
+                                        <a href={project.githubLink}>Github</a>
+                                        <a href={project.projectLink}>Project demonstration</a>
+                                    </div>
                                     <div className="projectTechs">
+                                        <p>Technologies used in this project include:</p>
                                         <ul>
                                             {project.technologies.map((tech) => (
                                                 <li>{tech}</li>
