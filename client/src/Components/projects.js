@@ -43,7 +43,7 @@ class Project extends React.Component {
                 <Grid className="projects" justify="flex-start" direction="column" alignItems="center" spacing={5}>
                     {projects.map((project) => (
                         <Container className="project">
-                            <Card>
+                            <Card className="card">
                                 <Card.Title>{project.name}</Card.Title>
                                 <Card.Text>{project.description}</Card.Text>
                                 <a href={project.githubLink}>Github</a>
