@@ -14,5 +14,12 @@
    background-color: #095092;
    border-radius: 10px;
    width: 75vw;
-   margin-bottom: 5vh;
+   margin-top: 5vh;
+}
+
+.cardContent {
+   padding-left: 2vh;
+   padding-top: 1vh;
+   padding-bottom: 1vh;
+   padding-right: 2vh;
 }
