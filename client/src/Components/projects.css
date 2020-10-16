@@ -10,21 +10,10 @@
 #002E5D - Navy
 #0062B8 - Royal blue
 */
-
-.jumbotron {
-   background-color: #002E5D;
-   color: #FFFFFF;
-}
-
-.App {
-   background-color: #0062B8;
-   color: #FFFFFF;
-}
-
 .card {
    background-color: #002E5D;
 }
 
 .gridItem {
-   width: 75%;
+   width: 75vh;
 }
