@@ -42,21 +42,23 @@ class Project extends React.Component {
             return (
                 <Grid container className="projects" justify="flex-start" direction="column" alignItems="center" spacing={5}>
                     {projects.map((project) => (
-                        <Container className="project">
-                            <Card className="card">
-                                <Card.Title>{project.name}</Card.Title>
-                                <Card.Text>{project.description}</Card.Text>
-                                <a href={project.githubLink}>Github</a>
-                                <a href={project.projectLink}>Project demonstration</a>
-                                <div className="projectTechs">
-                                    <ul>
-                                        {project.technologies.map((tech) => (
-                                            <li>{tech}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </Card>
-                        </Container>  
+                        <Grid item>
+                            <Container className="project">
+                                <Card className="card">
+                                    <Card.Title>{project.name}</Card.Title>
+                                    <Card.Text>{project.description}</Card.Text>
+                                    <a href={project.githubLink}>Github</a>
+                                    <a href={project.projectLink}>Project demonstration</a>
+                                    <div className="projectTechs">
+                                        <ul>
+                                            {project.technologies.map((tech) => (
+                                                <li>{tech}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </Card>
+                            </Container>
+                        </Grid>  
                     ))}
                 </Grid>
             );
