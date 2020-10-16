@@ -1,6 +1,7 @@
 import React from 'react';
 import './projects.css';
 import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card';
 
 class Project extends React.Component {
     constructor(props) {
