@@ -46,10 +46,6 @@ class Project extends React.Component {
                                 <div className="cardContent">
                                     <h3>{project.name}</h3>
                                     <p>{project.description}</p>
-                                    <div className="projectLinks">
-                                        <a href={project.githubLink}>Github</a>
-                                        <a href={project.projectLink}>Project demonstration</a>
-                                    </div>
                                     <div className="projectTechs">
                                         <p>Technologies used in this project include:</p>
                                         <ul>
@@ -57,6 +53,12 @@ class Project extends React.Component {
                                                 <li>{tech}</li>
                                             ))}
                                         </ul>
+                                    </div>
+                                    <div className="projectLinks">
+                                        <p>
+                                            Visit the <a href={project.githubLink}>GitHub</a> repository for this project,
+                                            or take a look at the <a href={project.projectLink}>project demonstration</a>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
