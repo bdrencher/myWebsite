@@ -7,7 +7,16 @@
 #5F0A16 - Rosewood (deep red)
 */
 
-.App {
+.jumpotron {
    background-color: #214F4B;
-   color: #09E85E;
+   color: #2AFC98;
+}
+
+.App {
+   background-color: #16C172;
+   color: #2DE1FC;
+}
+
+.card {
+   background-color: #214F4B;
 }
