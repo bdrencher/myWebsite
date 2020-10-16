@@ -7,7 +7,7 @@ import Project from './Components/projects';
 function App() {
   return (
     <div className="App">
-      <Jumbotron>
+      <Jumbotron className="jumbotron">
         <h1>Ben Rencher</h1>
         <p>
           Welcome to my portfolio site! As you can see, 
@@ -17,7 +17,6 @@ function App() {
           More information about me can be found on LinkedIn: <a href="https://www.linkedin.com/in/ben-rencher-250114b3/">LinkedIn</a>.
         </p>
       </Jumbotron>
-
       <Project />
     </div>
   );
