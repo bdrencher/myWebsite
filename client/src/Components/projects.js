@@ -41,9 +41,9 @@ class Project extends React.Component {
                 <Container className="projects">
                     {projects.map((project) => (
                         <Container className="project">
-                            <card>
-                                <h3>{project.name}</h3>
-                                <p>{project.description}</p>
+                            <Card>
+                                <Card.Title>{project.name}</Card.Title>
+                                <Card.Text>{project.description}</Card.Text>
                                 <a href={project.githubLink}>Github</a>
                                 <a href={project.projectLink}>Project demonstration</a>
                                 <div className="projectTechs">
@@ -53,7 +53,7 @@ class Project extends React.Component {
                                         ))}
                                     </ul>
                                 </div>
-                            </card>
+                            </Card>
                         </Container>  
                     ))}
                 </Container>
