@@ -6,7 +6,7 @@ import Project from './Components/projects';
 function App() {
   return (
     <div className="App">
-      <div className="jumbotron">
+      <div className="header">
         <h1>Ben Rencher</h1>
         <p>
           Welcome to my portfolio site! As you can see, 
@@ -17,6 +17,8 @@ function App() {
         </p>
       </div>
       <Project />
+      <footer>
+      </footer>
     </div>
   );
 }
