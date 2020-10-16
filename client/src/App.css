@@ -1,9 +1,23 @@
 .jumbotron {
   background-color: #002E5D;
-  color: #FFFFFF;
+  color: #E2F6F6;
 }
 
 .App {
   background-color: #0062B8;
-  color: #FFFFFF;
+  color: #E2F6F6;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+a {
+  color: #AFFFA5;
+}
+
+a:focus {
+  color:#D6FFD1;
+}
+
+a:visited {
+  color: #5F0A16
 }
