@@ -44,8 +44,8 @@ class Project extends React.Component {
                         <Grid item className="gridItem">
                             <Container className="project">
                                 <div className="card">
-                                    <div.Title>{project.name}</div.Title>
-                                    <div.Text>{project.description}</div.Text>
+                                    <div>{project.name}</div>
+                                    <div>{project.description}</div>
                                     <a href={project.githubLink}>Github</a>
                                     <a href={project.projectLink}>Project demonstration</a>
                                     <div className="projectTechs">
