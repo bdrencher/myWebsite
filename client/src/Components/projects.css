@@ -1,15 +1,13 @@
-/* #8D8741 - olive
-   #659DBD - pastel blue
-   #DAAD86 - tan
-   #BC986A - dried mud
-   #FBEEC1 - Sandstone */
+/* 
+#2DE1FC - Sky Blue (light blue)
+#2AFC98 - Spring green (light green)
+#09E85E - Malachite (medium green)
+#16C172 - Emerald (green)
+#214F4B - Jungle green (dark green)
+#5F0A16 - Rosewood (deep red)
+*/
 
-/* #1E272F - DARK BLUE
-   #C5CACF - DARK GREY
-   #1C242C - DARKER BLUE
-   #EA7343 - ORANGE
-   #606E7A - LIGHT GREY
-   #3B5059 - BLUE GREEN
-   #789890 - LIGHT BLUE GREEN
-   #6D4738 - BROWN
-   #4184CB - LIGHT BLUE */
+.App {
+   background-color: #214F4B;
+   color: #09E85E;
+}
