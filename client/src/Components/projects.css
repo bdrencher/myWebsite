@@ -5,18 +5,26 @@
 #16C172 - Emerald (green)
 #214F4B - Jungle green (dark green)
 #5F0A16 - Rosewood (deep red)
+
+#FFFFFF - White
+#002E5D - Navy
+#0062B8 - Royal blue
 */
 
 .jumbotron {
-   background-color: #214F4B;
-   color: #2AFC98;
+   background-color: #002E5D;
+   color: #FFFFFF;
 }
 
 .App {
-   background-color: #16C172;
-   color: #2DE1FC;
+   background-color: #0062B8;
+   color: #FFFFFF;
 }
 
 .card {
-   background-color: #214F4B;
+   background-color: #002E5D;
+}
+
+.gridItem {
+   width: 75%;
 }
