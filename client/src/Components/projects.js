@@ -39,27 +39,25 @@ class Project extends React.Component {
             );
         } else {
             return (
-                <Grid container className="projects" justify="flex-start" direction="column" alignItems="center" spacing={5}>
+                <Container className="projects">
                     {projects.map((project) => (
-                        <Grid item className="gridItem">
-                            <Container className="project">
-                                <div className="card">
-                                    <div>{project.name}</div>
-                                    <div>{project.description}</div>
-                                    <a href={project.githubLink}>Github</a>
-                                    <a href={project.projectLink}>Project demonstration</a>
-                                    <div className="projectTechs">
-                                        <ul>
-                                            {project.technologies.map((tech) => (
-                                                <li>{tech}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
+                        <Container className="project">
+                            <div className="card">
+                                <div>{project.name}</div>
+                                <div>{project.description}</div>
+                                <a href={project.githubLink}>Github</a>
+                                <a href={project.projectLink}>Project demonstration</a>
+                                <div className="projectTechs">
+                                    <ul>
+                                        {project.technologies.map((tech) => (
+                                            <li>{tech}</li>
+                                        ))}
+                                    </ul>
                                 </div>
-                            </Container>
-                        </Grid>  
+                            </div>
+                        </Container>
                     ))}
-                </Grid>
+                </Container>
             );
         }
     }
