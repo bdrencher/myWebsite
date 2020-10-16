@@ -1,7 +1,6 @@
 import React from 'react';
 import './projects.css';
 import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
 import Grid from '@material-ui/core/Grid';
 
 class Project extends React.Component {
@@ -44,9 +43,9 @@ class Project extends React.Component {
                     {projects.map((project) => (
                         <Grid item className="gridItem">
                             <Container className="project">
-                                <Card className="card">
-                                    <Card.Title>{project.name}</Card.Title>
-                                    <Card.Text>{project.description}</Card.Text>
+                                <div className="card">
+                                    <div.Title>{project.name}</div.Title>
+                                    <div.Text>{project.description}</div.Text>
                                     <a href={project.githubLink}>Github</a>
                                     <a href={project.projectLink}>Project demonstration</a>
                                     <div className="projectTechs">
@@ -56,7 +55,7 @@ class Project extends React.Component {
                                             ))}
                                         </ul>
                                     </div>
-                                </Card>
+                                </div>
                             </Container>
                         </Grid>  
                     ))}

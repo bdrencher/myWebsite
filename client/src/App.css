@@ -14,10 +14,10 @@ a {
   color: #AFFFA5;
 }
 
-a:focus {
+a:hover {
   color:#D6FFD1;
 }
 
 a:visited {
-  color: #5F0A16
+  color: #FFD87C;
 }
