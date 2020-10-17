@@ -15,6 +15,14 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
+app.get("/repositoryNotAvailable", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
+app.get("/projectDemoNotAvailable", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
 app.listen(port, () => {
     console.log("Listening on " + port);
 });

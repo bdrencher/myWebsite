@@ -47,7 +47,7 @@ class Project extends React.Component {
                                     <h3>{project.name}</h3>
                                     <p>{project.description}</p>
                                     <div className="projectTechs">
-                                        <p>Technologies used in this project include:</p>
+                                        <p>{project.name} is being developed with:</p>
                                         <ul>
                                             {project.technologies.map((tech) => (
                                                 <li>{tech}</li>
@@ -59,7 +59,7 @@ class Project extends React.Component {
                                             Visit the <a href={project.githubLink}>GitHub</a> repository for this project,
                                             or take a look at the <a href={project.projectLink}>project demonstration</a>.
                                         </p>
-                                    </div>
+                                    </div>  
                                 </div>
                             </div>
                         </Container>
