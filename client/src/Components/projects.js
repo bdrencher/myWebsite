@@ -1,7 +1,6 @@
 import React from 'react';
 import './projects.css';
 import Container from 'react-bootstrap/Container';
-import Grid from '@material-ui/core/Grid';
 
 class Project extends React.Component {
     constructor(props) {
